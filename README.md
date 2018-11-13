@@ -4,7 +4,7 @@
 
 ## Latest Announcement : New interesting coding challenges have been uploaded be sure to try them out [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/puzzles/challenges.md)! 
 ## Solutions for the Mid Sem II Exam are uploaded [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/exams/mid%20sem%202/answers/readme.md)  
-## Syllabus for end sem exam is uplaoded [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/exams/end%20sem/syllabus.md)  
+## Syllabus for end sem exam is uploaded [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/exams/end%20sem/syllabus.md)  
 
 ____
 
