@@ -143,7 +143,7 @@ Make a game of rock, paper or scissors against the computer.
 
 **Hint**
 
-- Use the guide provided [here](https://www.dummies.com/programming/c/c-for-dummies-cheat-sheet-2/)
+- Use the guide provided [here](https://www.dummies.com/programming/c/how-to-generate-random-numbers-in-c-programming/)
 
 **Extension**
 
