@@ -14,7 +14,7 @@ A student wishes to use a personal computer to calculate the radius of a circle 
 
 Once the program execution begins, the message
 
-`Raduis = ?`
+`Radius = ?`
 
 is displayed. The student then enters a value for the radius. Let us assume that the student enters a value of 5 for the radius. The computer will responfd by displaying
 
