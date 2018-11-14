@@ -2,10 +2,11 @@
 
 
 
-## Latest Announcement : New interesting coding challenges have been uploaded be sure to try them out [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/puzzles/challenges.md)! 
+## Latest Announcement : 
 ## Solutions for the Mid Sem II Exam are uploaded [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/exams/mid%20sem%202/answers/readme.md)  
 ## Syllabus for end sem exam is uploaded [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/exams/end%20sem/syllabus.md)  
-## You can find a list of awesome projects in C in the repo [here](https://github.com/jorgegonzalez/beginner-projects#projects)  
+## Code files for pointer are being uploaded, you can find them [here](https://github.com/dbc2201/gla-bcsc0001-2018/tree/master/codes/pointers)  
+
 ____
 
 
@@ -30,7 +31,8 @@ click the links given below to navigate the resources.
 
 
 **Extra Links**
-
+* ## You can find a list of awesome projects in C in the repo [here](https://github.com/jorgegonzalez/beginner-projects#projects)  
+* New interesting coding challenges have been uploaded be sure to try them out [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/puzzles/challenges.md)! 
 * [Online Course for searching and sorting](http://qrcode.flipick.com/index.php/366)    
 * [C Tutorials in Hindi](https://spoken-tutorial.org/tutorial-search/?search_foss=C+and+Cpp&search_language=Hindi)
 * [Tic Tac Toe Game in C](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/codes/tictactoe.md)    
