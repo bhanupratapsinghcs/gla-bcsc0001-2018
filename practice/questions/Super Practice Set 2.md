@@ -407,7 +407,7 @@ float process(float r)
       {
           int a, b, min;
           printf("To STOP, enter 0 for each number\n");
-          printf("\Please enter the first number: ");
+          printf("\nPlease enter the first number: ");
           scanf("%d", &a);
           printf("Please enter the second number: ");
           scanf("%d", &b);
@@ -415,7 +415,7 @@ float process(float r)
           {
               min = smaller(a, b);
               printf("\nThe smaller number is: %d\n", min);
-              printf("\Please enter the first number: ");
+              printf("\nPlease enter the first number: ");
               scanf("%d", &a);
               printf("Please enter the second number: ");
               scanf("%d", &b);
@@ -441,7 +441,7 @@ float process(float r)
           int n, i = 0;
           int a[100], b[100], min[100];
           printf("To STOP, enter 0 for each number\n");
-          printf("\Please enter the first number: ");
+          printf("\nPlease enter the first number: ");
           scanf("%d", &a[i]);
           printf("Please enter the second number: ");
           scanf("%d", &b[i]);
@@ -449,7 +449,7 @@ float process(float r)
           {
               min[i] = smaller(a[i], b[i]);
               printf("\nThe smaller number is: %d\n", min[i]);
-              printf("\Please enter the first number: ");
+              printf("\nPlease enter the first number: ");
               scanf("%d", &a[++i]);
               printf("Please enter the second number: ");
               scanf("%d", &b[i]);
