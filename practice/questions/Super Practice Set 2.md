@@ -14,7 +14,7 @@ A student wishes to use a personal computer to calculate the radius of a circle 
 
 Once the program execution begins, the message
 
-`Radius = ?`
+`Raduis = ?`
 
 is displayed. The student then enters a value for the radius. Let us assume that the student enters a value of 5 for the radius. The computer will responfd by displaying
 
@@ -407,7 +407,7 @@ float process(float r)
       {
           int a, b, min;
           printf("To STOP, enter 0 for each number\n");
-          printf("\nPlease enter the first number: ");
+          printf("\Please enter the first number: ");
           scanf("%d", &a);
           printf("Please enter the second number: ");
           scanf("%d", &b);
@@ -415,7 +415,7 @@ float process(float r)
           {
               min = smaller(a, b);
               printf("\nThe smaller number is: %d\n", min);
-              printf("\nPlease enter the first number: ");
+              printf("\Please enter the first number: ");
               scanf("%d", &a);
               printf("Please enter the second number: ");
               scanf("%d", &b);
@@ -441,7 +441,7 @@ float process(float r)
           int n, i = 0;
           int a[100], b[100], min[100];
           printf("To STOP, enter 0 for each number\n");
-          printf("\nPlease enter the first number: ");
+          printf("\Please enter the first number: ");
           scanf("%d", &a[i]);
           printf("Please enter the second number: ");
           scanf("%d", &b[i]);
@@ -449,7 +449,7 @@ float process(float r)
           {
               min[i] = smaller(a[i], b[i]);
               printf("\nThe smaller number is: %d\n", min[i]);
-              printf("\nPlease enter the first number: ");
+              printf("\Please enter the first number: ");
               scanf("%d", &a[++i]);
               printf("Please enter the second number: ");
               scanf("%d", &b[i]);
@@ -484,21 +484,21 @@ ___
 
 **The following names are valid identifiers**
 
-* x
-* y12
-* sum_1
-* _temperature
-* names
-* area
-* tax_rate
-* TABLE
+* `x`
+* `y12`
+* `sum_1`
+* `_temperature`
+* `names`
+* `area`
+* `tax_rate`
+* `TABLE`
 
 **The following names are NOT valid identifiers for the reason stated**
 
-* 4th : The first character must be a letter
-* "x" : Illegal Characters `*`
-* order-no : Illegal Characters `-`
-* error flag : Illegal Chracters ` <blank space>`
+* `4th` : The first character must be a letter
+* `"x"` : Illegal Characters `"`
+* `order-no` : Illegal Characters `-`
+* `error flag` : Illegal Chracters ` <blank space>`
 
 ___
 
@@ -518,20 +518,20 @@ ___
 
 **some valid decimal integer constants are shown below.**
 
-* 0
-* 1
-* 743
-* 5280
-* 32767
-* 9999
+* `0`
+* `1`
+* `743`
+* `5280`
+* `32767`
+* `9999`
 
 The following decimal integer constants are written incorrectly for the reasons stated.
 
-* 12,245 : illegal character `,`
-* 36.0 : illegal character `.`
-* 10 20 30 : illegal character `<blank space>`
-* 123-45-6789 : illegal character `-`
-* 0900 : the first digit cannot be a zero.
+* `12,245` : illegal character `,`
+* `36.0` : illegal character `.`
+* `10 20 30` : illegal character `<blank space>`
+* `123-45-6789` : illegal character `-`
+* `0900` : the first digit cannot be a zero.
 
 ___
 
@@ -539,18 +539,18 @@ ___
 
 **some valid octal integer constants are written incorrectly for the reasons stated.**
 
-* 0
-* 01
-* 0743
-* 077777
+* `0`
+* `01`
+* `0743`
+* `077777`
 
 
 
 The following octal integers constants are written incorrectly for the reasons stated
 
-* 743 : does not begin with a 0
-* 05280 : illegal digit `8`
-* 0777.777 : illegal character `.`
+* `743` : does not begin with a 0
+* `05280` : illegal digit `8`
+* `0777.777` : illegal character `.`
 
 ___
 
@@ -558,19 +558,19 @@ ___
 
 **some valid hexadecimal integer constants are shown below.**
 
-* 0X
-* 0X1
-* 0X7FFF
-* 0xabcd
+* `0X`
+* `0X1`
+* `0X7FFF`
+* `0xabcd`
 
 
 
 The following hexadecimal integer constants are written incorrectly for the reasons stated.
 
-* 0X12.34 : illegal character `.`
-* 0BE3B : does not begin with 0x or 0X.
-* 0x.4bff : illegal character `.`
-* 0XDEFG : illlegal character `G`
+* `0X12.34` : illegal character `.`
+* `0BE3B` : does not begin with 0x or 0X.
+* `0x.4bff` : illegal character `.`
+* `0XDEFG` : illlegal character `G`
 
 ___
 
@@ -578,15 +578,15 @@ ___
 
 **some unsigned and long integer constants are shown below.**
 
-| Constant    | Number System               |
-| ----------- | --------------------------- |
-| 50000U      | decimal (unsigned)          |
-| 123456789L  | decimal (long)              |
-| 123456789UL | decimal (unsigned long)     |
-| 0123456L    | octal (long)                |
-| 0777777U    | octal (unsigned)            |
-| 0X50000U    | hexadecimal (unsigned)      |
-| 0XFFFFUL    | hexadecimal (unsigned long) |
+| Constant      | Number System               |
+| ------------- | --------------------------- |
+| `50000U`      | decimal (unsigned)          |
+| `123456789L`  | decimal (long)              |
+| `123456789UL` | decimal (unsigned long)     |
+| `0123456L`    | octal (long)                |
+| `0777777U`    | octal (unsigned)            |
+| `0X50000U`    | hexadecimal (unsigned)      |
+| `0XFFFFUL`    | hexadecimal (unsigned long) |
 
 ____
 
@@ -594,27 +594,27 @@ ____
 
 **some valid floating-point constants are shown below.**
 
-* 0.
-* 1.
-* 0.2
-* 827.602
-* 50000.
-* 0.000743
-* 12.3
-* 315.0066
-* 2E-8
-* 0.006e-3
-* 1.6667E+8
-* .12121212e12
+* `0.`
+* `1.`
+* `0.2`
+* `827.602`
+* `50000.`
+* `0.000743`
+* `12.3`
+* `315.0066`
+* `2E-8`
+* `0.006e-3`
+* `1.6667E+8`
+* `.12121212e12`
 
 
 
 The following are *not* valid floating-point constants for the reasons stated
 
-* 1 : either a decimal point or an exponent must be present.
-* 1,000.0 : illegal character `,`
-* 2E+10.2 : the exponent must be an integer quantity (it cannot contain a decimal point)
-* 3E 10 : illegal character (blank space) in the exponent.
+* `1` : either a decimal point or an exponent must be present.
+* `1,000.0` : illegal character `,`
+* `2E+10.2` : the exponent must be an integer quantity (it cannot contain a decimal point)
+* `3E 10` : illegal character (blank space) in the exponent.
 
 ___
 
@@ -622,16 +622,17 @@ ___
 
 **The quantity 3 X 10 <sup>5</sup> can be represented in C by any of the following floating-point constants.**
 
-* 300000.
-* 3e5
-* 3e+5
-* 3E5
-* 3.0e+
-* .3e6
-* 0.3E6
-* 30E4
-* 30.E+4
-* 300e3
+* `300000.`
+
+* `3e5`
+* `3e+5`
+* `3E5`
+* `3.0e+`
+* `.3e6`
+* `0.3E6`
+* `30E4`
+* `30.E+4`
+* `300e3`
 
 ___
 
@@ -639,11 +640,11 @@ ___
 
 **some character constants are shown below.**
 
-* 'A'
-* 'x'
-* '3'
-* '?'
-* ' '
+* `'A'`
+* `'x'`
+* `'3'`
+* `'?'`
+* `' '`
 
 ___
 
@@ -692,17 +693,17 @@ ___
 
 **some string constants are shown below**
 
-* "green"
-* "Washington, D.C. 200005"
-* "123-456-789"
-* "$12.20"
-* "THE CORRECT ANSWER IS:"
-* "2*(I+3)/J"
-* "        "
-* "Line 1\nLine 2\nLine 3"
-* ""
+* `"green"`
+* `"Washington, D.C. 200005"`
+* `"123-456-789"`
+* `"$12.20"`
+* `"THE CORRECT ANSWER IS:"`
+* `"2*(I+3)/J"`
+* `"        "`
+* `"Line 1\nLine 2\nLine 3"`
+* `""`
 
-Note that the string constant "Line 1\nLine 2\nLine 3" extneds over three lines, because of the newline characters that are embedded within the string. Thus, this string would be displayed as
+Note that the string constant "Line 1\nLine 2\nLine 3" extends over three lines, because of the newline characters that are embedded within the string. Thus, this string would be displayed as
 
 ```
 Line 1
@@ -850,37 +851,61 @@ ___
 ## Problems
 
 1. Determine which of the following are valid identifiers. If valid, explain why
-   1. record1
-   2. $tax
-   3. name_and_address
-   4. 1record
-   5. name
-   6. name-and-address
-   7. file_3
-   8. name and address
-   9. 123-45-6789
-   10. return
+   1. `record1`
+   2. `$tax`
+   3. `name_and_address`
+   4. `1record`
+   5. `name`
+   6. `name-and-address`
+   7. `file_3`
+   8. `name and address`
+   9. `123-45-6789`
+   10. `return`
 2. Assume that your version of C can recognize only the first 8 characters of an identifier name, though identifier names may be arbitrarily long. Which of the following pairs of identifier names are considered to be identical and which are distinct?
-   1. name, names
-   2. list1, list2
-   3. address, Address
-   4. answer, ANSWER
-   5. identifier_1, identifier_2
-   6. char1, char_1
+   1. `name, names`
+   2. `list1, list2`
+   3. `address, Address`
+   4. `answer, ANSWER`
+   5. `identifier_1, identifier_2`
+   6. `char1, char_1`
 3. Determine which of the following numerical values are valid constants. If a constant is valid, specify whether it is an integer or real. Also, specify the base for each valid integer constant.
-   1. 0.5
-   2. 12345678
-   3. 0515
-   4. 27,822
-   5. 12345678L
-   6. 018CDF
-   7. 9.3e12
-   8. 0.8E+0.8
-   9. 0XBCFDAL
-   10. 9.3e-12
-   11. 0.8E 8
-   12. 0x87e3ha
-4. 
-
-
-
+   1. `0.5`
+   2. `12345678`
+   3. `0515`
+   4. `27,822`
+   5. `12345678L`
+   6. `018CDF`
+   7. `9.3e12`
+   8. `0.8E+0.8`
+   9. `0XBCFDAL`
+   10. `9.3e-12`
+   11. `0.8E 8`
+   12. `0x87e3ha`
+4. Determine which of the following are valid character constants.
+   1. `'a'`
+   2. `'\\'`
+   3. `'\0'`
+   4. `$`
+   5. `\a`
+   6. `xyz`
+   7. `\n`
+   8. `T`
+   9. `\052`
+   10. `/n`
+5. Determine which of the following are valid string constants.
+   1. `'8:15 P.M.'`
+   2. `"1.3e-12"`
+   3. `"Red, White and Blue"`
+   4. `"NEW YORK, NY 1200"`
+   5. `"Name:`
+   6. `"The professor said, "Please don't sleep in class"`
+   7. `"Chap. 3 (Con\d)"`
+6. Write appropriate declarations for each group of variables and arrays.
+   1. Integer variables: `p, q`
+   2. Floating-point variables: `x, y, z`
+   3. Character variables: `a, b, c`
+   4. Floating-point variables: `root1, root2`
+   5. Long integer variable: `counter`
+   6. Short integer variable: `flag`
+   7. Integer variable: `index`
+   8. 
