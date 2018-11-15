@@ -498,7 +498,7 @@ ___
 * `4th` : The first character must be a letter
 * `"x"` : Illegal Characters `"`
 * `order-no` : Illegal Characters `-`
-* `error flag` : Illegal Chracters ` <blank space>`
+* `error flag` : Illegal Characters ` <blank space>`
 
 ___
 
@@ -861,6 +861,7 @@ ___
    8. `name and address`
    9. `123-45-6789`
    10. `return`
+
 2. Assume that your version of C can recognize only the first 8 characters of an identifier name, though identifier names may be arbitrarily long. Which of the following pairs of identifier names are considered to be identical and which are distinct?
    1. `name, names`
    2. `list1, list2`
@@ -868,6 +869,7 @@ ___
    4. `answer, ANSWER`
    5. `identifier_1, identifier_2`
    6. `char1, char_1`
+
 3. Determine which of the following numerical values are valid constants. If a constant is valid, specify whether it is an integer or real. Also, specify the base for each valid integer constant.
    1. `0.5`
    2. `12345678`
@@ -881,7 +883,9 @@ ___
    10. `9.3e-12`
    11. `0.8E 8`
    12. `0x87e3ha`
+
 4. Determine which of the following are valid character constants.
+
    1. `'a'`
    2. `'\\'`
    3. `'\0'`
@@ -892,7 +896,9 @@ ___
    8. `T`
    9. `\052`
    10. `/n`
+
 5. Determine which of the following are valid string constants.
+
    1. `'8:15 P.M.'`
    2. `"1.3e-12"`
    3. `"Red, White and Blue"`
@@ -900,7 +906,9 @@ ___
    5. `"Name:`
    6. `"The professor said, "Please don't sleep in class"`
    7. `"Chap. 3 (Con\d)"`
+
 6. Write appropriate declarations for each group of variables and arrays.
+
    1. Integer variables: `p, q`
    2. Floating-point variables: `x, y, z`
    3. Character variables: `a, b, c`
@@ -908,4 +916,80 @@ ___
    5. Long integer variable: `counter`
    6. Short integer variable: `flag`
    7. Integer variable: `index`
-   8. 
+   8. Unsigned integer variable: `cust_no`
+   9. Double-precision variables: `gross, tax, net`
+   10. Character variables: `current, last`
+   11. Unsigned integer variable: `count`
+   12. Floating-point variable: `error`
+   13. Character variables: `first, last`
+   14. 80-element character array: `message`
+
+7. Write appropriate declarations and assign the given initial values for each group of variables and arrays.
+
+   1. Floating-point variables: `a = -8,2f, b = 0.005f`
+   2. Integer variables: `x = 129, y = 87, z = -22`
+   3. Character variables: `x1 = 'w', c2 = '&'`
+   4. Double-precision variables: `d1 = 2.88 x 10^-8, d2 = -8.4 x 10^5`
+   5. Integer variables: `u = 711 (octal), v = ffff (hexadecimal)`
+   6. Long integer variable: `big = 123456789`
+   7. Double-precision: `c = 0.3333333333`
+   8. Character variable: `eol = newline character`
+
+8. Explain the purpose of each of the following expressions.
+
+   1. `a - b`
+   2. `a * (b + c)`
+   3. `d = a * (b + c)`
+   4. `a >= b`
+   5. `(a % 5) == 0`
+   6. `a < (b / c)`
+   7. `--a`
+
+9. Identify whether each of the following statements is an expression statement, a compound statement or a control statement.
+
+   1. ```C
+      a * (b + c);
+      ```
+
+   2. ```C
+      while (a < 100)
+      {
+          d = a * (b + c);
+          ++a;
+      }
+      ```
+
+   3. ```C
+      if (x > 0)
+      	y = 2.0;
+      else
+          y = 3.0;
+      ```
+
+   4. ```C
+      {
+          ++x;
+          if (x > 0)
+              y = 2.0;
+          else
+              y = 3.0;
+          printf("%f", y);
+      }
+      ```
+
+10. Write an appropriate definition for each of the following symbolic constants, as it would appear within a program.
+
+    | **Constant** | **Text** |
+    | :----------: | :------: |
+    |    FACTOR    |   -18    |
+    |    ERROR     |  0.0001  |
+    |    BEGIN     |    {     |
+    |     END      |    }     |
+    |     NAME     | "Sharon" |
+    |     EOLN     |   '\n'   |
+    |     COST     | "$19.95" |
+
+
+
+___
+
