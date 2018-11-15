@@ -36,6 +36,7 @@ click the links given below to navigate the resources.
 * [Online Course for searching and sorting](http://qrcode.flipick.com/index.php/366)    
 * [C Tutorials in Hindi](https://spoken-tutorial.org/tutorial-search/?search_foss=C+and+Cpp&search_language=Hindi)
 * [Tic Tac Toe Game in C](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/codes/tictactoe.md)    
+* [Sorting and Searching Algorithms](https://github.com/TheAlgorithms/Java)  
 
 
 
