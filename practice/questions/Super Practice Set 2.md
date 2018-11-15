@@ -12,7 +12,7 @@ ___
 
 A student wishes to use a personal computer to calculate the radius of a circle whose area has a value of 100. A program is available that will calculate the area of a circle, given the radius. (Note that this is just the opposite of what the student wants to do). This program isn't exactly what is needed but it does allow the student to obtain the answer by trial-and-error. The procedure will be to guess a value for the radius and then calculate a corresponding area. This trial-and-error procedure continues until the student has found a value for the radius that yields an area sufficiently close to 100.
 
-Once the program execution begins, the message
+Once thee program execution begins, the message
 
 `Raduis = ?`
 
@@ -977,6 +977,24 @@ ___
       }
       ```
 
+   5. ```C
+      {
+          ++x;
+          if (x > 0)
+          {
+              y = 2.0;
+              z = 6.0;
+          }
+          else
+          {
+              y = 3.0;
+              z = 9.0;
+          }
+      }
+      ```
+
+   6. 
+
 10. Write an appropriate definition for each of the following symbolic constants, as it would appear within a program.
 
     | **Constant** | **Text** |
@@ -992,4 +1010,8 @@ ___
 
 
 ___
+
+
+
+## Operators and Expressions
 
