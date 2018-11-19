@@ -1,5 +1,9 @@
 # Important points about pointers
 
+## Always remmeber -
+* `p` yields the value of the pointer ( that is the address that is stores )
+* `*p` yields the value pointed to ( the value at the stored address )
+
 * *The data type of a pointer is different from the type of the variable it points to.* If the latter is of type `char`, then the type of a correctly defined pointer is `char *`, i.e., pointer to char. Also, the data type of a variable or constant an be transformed into the data type of the pointer using a cast. For instance, the expression `(int *) 32567` transforms an `int` to a pointer to int.
 * *The size of a pointer is generally fixed and doesn't depend on the size of the object it points to*. A pointer, being an address, represents an integer value that is wide enough to address every byte of memory on a machine. Exceptions notwithstanding, a pointer has the same size as the native word length, which often has the size of an `int`. But the pointer itself is not an `int`.
 * *A pointer can be assigned the value 0*. The address 0 is also represented by the symbolic constant `NULL`, and a pointer that has this value is known as a **null pointer**. C guarantees that the address `NULL` can never point to an object used by the program.
