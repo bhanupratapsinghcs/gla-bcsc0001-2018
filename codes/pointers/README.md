@@ -1,7 +1,7 @@
 # Important points about pointers
 
 ## Always remmeber -
-* `p` yields the value of the pointer ( that is the address that is stores )
+* `p` yields the value of the pointer ( that is the address that it stores )
 * `*p` yields the value pointed to ( the value at the stored address )
 
 * *The data type of a pointer is different from the type of the variable it points to.* If the latter is of type `char`, then the type of a correctly defined pointer is `char *`, i.e., pointer to char. Also, the data type of a variable or constant an be transformed into the data type of the pointer using a cast. For instance, the expression `(int *) 32567` transforms an `int` to a pointer to int.
