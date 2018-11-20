@@ -3,6 +3,7 @@
 
 
 ## Latest Announcement : 
+## Student List for Extra Class : [click here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/extra%20class/students/Student%20List%20for%20Extra%20Class%20(BCSC0001).md)  
 ## A new worksheet is available [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/puzzles/C%20Programming%20Worksheet.md)  
 ## Solutions for the Mid Sem II Exam are uploaded [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/exams/mid%20sem%202/answers/readme.md)  
 ## Syllabus for end sem exam is uploaded [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/exams/end%20sem/syllabus.md)  
