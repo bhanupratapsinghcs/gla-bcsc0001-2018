@@ -3,6 +3,7 @@
 
 
 ## Latest Announcement : 
+## Worksheet 3 : [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/Worksheet3.md)  
 ## Worksheet 2 : [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/puzzles/Worksheet2.md)  
 ## A sample solution for the worksheet [here](https://github.com/shivamyadav37/C_Programming_Worksheet_1)  
 ## Worksheet 1 : [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/puzzles/C%20Programming%20Worksheet.md)  
