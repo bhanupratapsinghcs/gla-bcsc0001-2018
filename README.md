@@ -3,6 +3,8 @@
 
 
 ## Latest Announcement : 
+## Worksheet 12 : [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/worksheets/Worksheet%2012.md)  
+## Worksheet 11 : [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/worksheets/Worksheet%2011.md)  
 ## Worksheet 10 : [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/worksheets/worksheet10.md)  
 ## Worksheet 9 : [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/worksheets/worksheet9.md)  
 ## Worksheet 8 : [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/worksheets/woksheet8.md)  
