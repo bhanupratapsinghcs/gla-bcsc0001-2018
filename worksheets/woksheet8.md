@@ -32,6 +32,6 @@
 
 9.  Write a program in C having two value parameters `U` and `n` with result type `float` to find the sum of the series given below:
 
-   ![](https://latex.codecogs.com/gif.latex?$$1-U+\frac{1}{2!}U^2-\frac{1}{3!}U^3+\frac{1}{4!}u^4+...\pm\frac{x^{2m-1}}{m!}$$)
+   ![](https://latex.codecogs.com/gif.latex?$$1-U+\frac{1}{2!}U^2-\frac{1}{3!}U^3+\frac{1}{4!}U^4+...\pm\frac{x^{2m-1}}{m!}$$)
 
 10.  Raising a number `n` to a power `p` is the same as multiplying the `n` by itself `p` times. Write a function caller **power** that takes two arguments, a double value for `n` and int value for `p`, and returns the result as a double value. Use default argument of 2 for `p`, so that if this argument is omitted that number will be squared. Write the main function that gets value from the user to test power function.
