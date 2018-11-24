@@ -3,6 +3,7 @@
 
 
 ## Latest Announcement : 
+## Worksheet 6 : [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/worksheets/worksheet6.md)  
 ## How to do bit-wise shifting in C [here](https://gist.github.com/dbc2201/986ae470adfc0277a55777a45e00855c)  
 ## Code files for pointer have been uploaded, you can find them [here](https://github.com/dbc2201/gla-bcsc0001-2018/tree/master/codes/pointers)  
 ## Worksheet 5 : [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/Worksheet%205.md)  
