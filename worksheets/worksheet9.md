@@ -13,7 +13,7 @@
    1. the total number of words in the line
    2. the total number of characters in the line
 
-4.  From a two-dimensional array `a[4][4]`, write a program in C to prepare a one-dimensional array `b[16]` that will have all the elements of `a[][]`. For example, for the following array
+4.  From a two-dimensional array `a[4][4]`, write a program in C to prepare a one-dimensional array `b[16]` that will have all the elements of `a[][]`. For example, for the following array.
 
    ![](https://latex.codecogs.com/gif.latex?$$\begin{array}{cccc}1&2&3&4\\5&6&7&8\\9&10&11&12\\13&14&15&16\end{array}$$)
 
