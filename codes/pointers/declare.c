@@ -1,16 +1,14 @@
+/*
+*   FileName    :   declare.c
+*   Purpose     :   To demonstrate a pointer declaration in C
+*   Author      :   Divyansh Bhardwaj, Technical Trainer, GLAU
+*   Operating System    :   Ubuntu 18.10, 64 Bit
+*   Compiler    :   GCC 8.2.0 x86_64 GNU
+*/
 #include <stdio.h>
 int main()
 {
-    int a = 4;  // declaring a vairable;
-    printf("a:\n");
-    printf("Address of a: %d (%x)\n", &a, &a);
-    printf("Value of a: %d\n", a);
-    int *p = &a;    // declaring a pointer and setting it to point to the address of a
-    printf("p:\n");
-    printf("P points to the address: %d (%x)\n", p, p);
-    printf("Value of p: %d\n", *p);
-    // These are also legal declarations for a pointer
-    int* p1;
-    int * p2;
-    return 0;
+    int *pointer;
+    //  just the above statement itself is a declaration statement.
+    //  We can say that we have declared a pointer to an int
 }
