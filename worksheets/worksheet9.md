@@ -15,7 +15,7 @@
 
 4.  From a two-dimensional array `a[4][4]`, write a program in C to prepare a one-dimensional array `b[16]` that will have all the elements of `a[][]`. For example, for the following array
 
-   ![this](\left[\begin{array}{cccc}1&2&3&4\\5&6&7&8\\9&10&11&12\\13&14&15&16\\\end{array}\right])  
+   ![](https://latex.codecogs.com/gif.latex/$$\left[\begin{array}{cccc}1&2&3&4\\5&6&7&8\\9&10&11&12\\13&14&15&16\\\end{array}\right]$$)
 
    The resultant array should be -
 
