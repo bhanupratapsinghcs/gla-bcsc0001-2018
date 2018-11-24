@@ -3,6 +3,8 @@
 
 
 ## Latest Announcement : 
+## Worksheet 9 : [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/worksheets/worksheet9.md)  
+## Worksheet 8 : [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/worksheets/woksheet8.md)  
 ## Worksheet 7 : [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/worksheets/worksheet7.md)  
 ## Worksheet 6 : [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/worksheets/worksheet6.md)  
 ## How to do bit-wise shifting in C [here](https://gist.github.com/dbc2201/986ae470adfc0277a55777a45e00855c)  
