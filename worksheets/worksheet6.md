@@ -20,7 +20,7 @@
 
    Write a program in C to read the names of users and number of units consumed, and print out the charges with names.
 
-5. Write a program in C to read a number `n` and print ![](https://latex.codecogs.com/gif.latex?$$x^2,x^3,x^4,x^5$$)
+5. Write a program in C to read a number `x` and print ![](https://latex.codecogs.com/gif.latex?$$x^2,x^3,x^4,x^5$$)
 
 6. Write a program in C to accept three digits (i.e 0-9) and print all possible combinations from these digits. (for example, if the three digits are 1, 2 and 3, then all possible values are 123, 132, 231, 213, 312 and 321)
 
