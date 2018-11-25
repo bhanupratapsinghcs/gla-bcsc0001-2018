@@ -3,6 +3,7 @@
 
 
 ## Latest Announcement : 
+1[](https://imgflip.com/i/2ne1vk)  
 ## Worksheet 12 : [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/worksheets/Worksheet%2012.md)  
 ## Worksheet 11 : [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/worksheets/Worksheet%2011.md)  
 ## Worksheet 10 : [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/worksheets/worksheet10.md)  
