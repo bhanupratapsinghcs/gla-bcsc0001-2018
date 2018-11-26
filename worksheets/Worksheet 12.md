@@ -4,7 +4,7 @@
 
 2. Write a program in C to print the series ![](https://latex.codecogs.com/gif.latex?$$1,4,7,10,...,40$$).
 
-3. Write a program in C to print the series ![](https://latex.codecogs.com/gif.latex?$$1,-4,7,10,...,-40$$).
+3. Write a program in C to print the series ![](https://latex.codecogs.com/gif.latex?$$1,-4,7,-10,...,-40$$).
 
 4. Write a program in C to calculate the volume and area of a sphere. ![](https://latex.codecogs.com/gif.latex?$$volume=\frac{4}{3}\pi\,r\,^3\,and\,area=4\,\pi\,r^2$$)
 
