@@ -1,10 +1,10 @@
 # Super Practice Set 2
 
-![](https://images.pexels.com/photos/442574/pexels-photo-442574.jpeg?auto=compress&cs=tinysrgb&h=650&w=940)
+![](https://images.pexels.com/photos/442574/pexels-photo-442574.jpeg?auto=compress&cs=tinyUsrgb&h=650&w=940)
 
 
 
-___
+------
 
 
 
@@ -12,11 +12,11 @@ ___
 
 A student wishes to use a personal computer to calculate the radius of a circle whose area has a value of 100. A program is available that will calculate the area of a circle, given the radius. (Note that this is just the opposite of what the student wants to do). This program isn't exactly what is needed but it does allow the student to obtain the answer by trial-and-error. The procedure will be to guess a value for the radius and then calculate a corresponding area. This trial-and-error procedure continues until the student has found a value for the radius that yields an area sufficiently close to 100.
 
-Once thee program execution begins, the message
+Once the program execution begins, the message
 
-`Raduis = ?`
+`Radius = ?`
 
-is displayed. The student then enters a value for the radius. Let us assume that the student enters a value of 5 for the radius. The computer will responfd by displaying
+is displayed. The student then enters a value for the radius. Let us assume that the student enters a value of 5 for the radius. The computer will respond by displaying
 
 `Area = 78.5398`
 
@@ -32,9 +32,9 @@ again appears, and the entire procedure is repeated. If the student types `n`, t
 
 is displayed and the computation is terminated.
 
-Shown below is a printed copy of the information displayed during an interactive session using the program described above. In this session, an approximate value of `r = 5.6` was determined after onyl three calculations. The information typed by the student is underlined.
+Shown below is a printed copy of the information displayed during an interactive session using the program described above. In this session, an approximate value of `r = 5.6` was determined after only three calculations. The information typed by the student is underlined.
 
-___
+------
 
 Radius = <u>5</u>
 
@@ -56,13 +56,13 @@ Do you wish to repeat the calculation? <u>n</u>
 
 Goodbye
 
-___
+------
 
 **Notice the manner in which the computer appears to be conversing with the user. Also, note that the student waits until she or he sees the calculated value of the area before deciding whether or not to carry out another calculation. If another calculation is finished, the new value for the radius supplied by the student will depend on the previously calculated results.**
 
 Could you write both the programs described here?
 
-___
+------
 
 
 
@@ -203,7 +203,7 @@ int main()
         }
         printf("Area = %f", area);
         printf("\nRadius  = ?");
-    	scanf("%f", &radius);
+        scanf("%f", &radius);
     }
     return 0;
 }
@@ -217,7 +217,7 @@ float process(float r)
 
 
 
-**Program to calculate the areas of circles, using a while loop; number of circles is unspecified**
+**Program to calculate the areas of circles, using a while loop; the number of circles is unspecified**
 
 ```C
 #include <stdio.h>
@@ -242,7 +242,7 @@ int main()
         }
         printf("Area = %f", area);
         printf("\nRadius  = ?");
-    	scanf("%f", &radius);
+        scanf("%f", &radius);
     }
     return 0;
 }
@@ -281,7 +281,7 @@ int main()
             area[i] = process(radius[i]);
         }
         printf("\nRadius  = ?");
-    	scanf("%f", &radius[++i]);
+        scanf("%f", &radius[++i]);
     }
     n = --i;
     printf("\nSummary of results\n\n");
@@ -313,7 +313,7 @@ float process(float r)
       ```
 
    2. ```C
-      #define MESSAGE "Welcome to the Wonderful World Of Computing!\n"
+      #define MESSAGE "Welcome to the Wonderful World Of Computing! \n"
       main()
       {
           printf(MESSAGE);
@@ -381,12 +381,12 @@ float process(float r)
           for ( count = 1; count <= n ; ++count )
           {
               printf("\nEnter the first number: ");
-      	    scanf("%d", &a);
-      	    printf("Enter the second number: ");
-      	    scanf("%d", &b);
-      	    min = smaller(a, b);
-      	    printf("\nThe smaller number is: %d\n", min);
-      	}
+              scanf("%d", &a);
+              printf("Enter the second number: ");
+              scanf("%d", &b);
+              min = smaller(a, b);
+              printf("\nThe smaller number is: %d\n", min);
+          }
       }
       int smaller(int a, int b)
       {
@@ -476,7 +476,7 @@ float process(float r)
 
 
 
-___
+------
 
 
 
@@ -484,95 +484,95 @@ ___
 
 **The following names are valid identifiers**
 
-* `x`
-* `y12`
-* `sum_1`
-* `_temperature`
-* `names`
-* `area`
-* `tax_rate`
-* `TABLE`
+- `x`
+- `y12`
+- `sum_1`
+- `_temperature`
+- `names`
+- `area`
+- `tax_rate`
+- `TABLE`
 
 **The following names are NOT valid identifiers for the reason stated**
 
-* `4th` : The first character must be a letter
-* `"x"` : Illegal Characters `"`
-* `order-no` : Illegal Characters `-`
-* `error flag` : Illegal Characters ` <blank space>`
+- `4th` : The first character must be a letter
+- `"x"` : Illegal Characters `"`
+- `order-no` : Illegal Characters `-`
+- `error flag` : Illegal Characters ` <blank space>`
 
-___
+------
 
 
 
 **The identifiers `file_manager` and `file_management` are both grammatically valid. Some compilers may be unable to distinguish between them, however, because the first eight letters are the same for each identifier. Therefore, only one of these characters should be used in a single C program.**
 
-___
+------
 
 
 
-**A C program is being written to calculate the future value of an investment. The identifiers `value` or `future_value` are appropriate symbolic names. However, `v` or `fv` would probably be too brief, since the intended representation of these identifiers is not clear. On the other hand, the identifier `future_value_of_an_investment` would be unsatisfactory because it is too long and cumbersome.**
+**A C program is being written to calculate the future value of an investment. The identifiers `value` or `future_value` are appropriate symbolic names. However, `v` or `fv` would probably be too brief since the intended representation of these identifiers is not clear. On the other hand, the identifier `future_value_of_an_investment` would be unsatisfactory because it is too long and cumbersome.**
 
-___
+------
 
 
 
 **some valid decimal integer constants are shown below.**
 
-* `0`
-* `1`
-* `743`
-* `5280`
-* `32767`
-* `9999`
+- `0`
+- `1`
+- `743`
+- `5280`
+- `32767`
+- `9999`
 
 The following decimal integer constants are written incorrectly for the reasons stated.
 
-* `12,245` : illegal character `,`
-* `36.0` : illegal character `.`
-* `10 20 30` : illegal character `<blank space>`
-* `123-45-6789` : illegal character `-`
-* `0900` : the first digit cannot be a zero.
+- `12,245` : illegal character `,`
+- `36.0` : illegal character `.`
+- `10 20 30` : illegal character `<blank space>`
+- `123-45-6789` : illegal character `-`
+- `0900` : the first digit cannot be a zero.
 
-___
+------
 
 
 
 **some valid octal integer constants are written incorrectly for the reasons stated.**
 
-* `0`
-* `01`
-* `0743`
-* `077777`
+- `0`
+- `01`
+- `0743`
+- `077777`
 
 
 
 The following octal integers constants are written incorrectly for the reasons stated
 
-* `743` : does not begin with a 0
-* `05280` : illegal digit `8`
-* `0777.777` : illegal character `.`
+- `743` : does not begin with a 0
+- `05280` : illegal digit `8`
+- `0777.777` : illegal character `.`
 
-___
+------
 
 
 
 **some valid hexadecimal integer constants are shown below.**
 
-* `0X`
-* `0X1`
-* `0X7FFF`
-* `0xabcd`
+- `0X`
+- `0X1`
+- `0X7FFF`
+- `0xabcd`
 
 
 
 The following hexadecimal integer constants are written incorrectly for the reasons stated.
 
-* `0X12.34` : illegal character `.`
-* `0BE3B` : does not begin with 0x or 0X.
-* `0x.4bff` : illegal character `.`
-* `0XDEFG` : illlegal character `G`
+- `0X12.34` : illegal character `.`
+- `0BE3B` : does not begin with 0x or 0X.
+- `0x.4bff` : illegal character `.`
+- `0XDEFG` : illlegal character `G`
 
-___
+------
 
 
 
@@ -588,65 +588,64 @@ ___
 | `0X50000U`    | hexadecimal (unsigned)      |
 | `0XFFFFUL`    | hexadecimal (unsigned long) |
 
-____
+------
 
 
 
 **some valid floating-point constants are shown below.**
 
-* `0.`
-* `1.`
-* `0.2`
-* `827.602`
-* `50000.`
-* `0.000743`
-* `12.3`
-* `315.0066`
-* `2E-8`
-* `0.006e-3`
-* `1.6667E+8`
-* `.12121212e12`
+- `0.`
+- `1.`
+- `0.2`
+- `827.602`
+- `50000.`
+- `0.000743`
+- `12.3`
+- `315.0066`
+- `2E-8`
+- `0.006e-3`
+- `1.6667E+8`
+- `.12121212e12`
 
 
 
 The following are *not* valid floating-point constants for the reasons stated
 
-* `1` : either a decimal point or an exponent must be present.
-* `1,000.0` : illegal character `,`
-* `2E+10.2` : the exponent must be an integer quantity (it cannot contain a decimal point)
-* `3E 10` : illegal character (blank space) in the exponent.
+- `1`: either a decimal point or an exponent must be present.
+- `1,000.0` : illegal character `,`
+- `2E+10.2`: the exponent must be an integer quantity (it cannot contain a decimal point)
+- `3E 10`: illegal character (blank space) in the exponent.
 
-___
+------
 
 
 
 **The quantity 3 X 10 <sup>5</sup> can be represented in C by any of the following floating-point constants.**
 
-* `300000.`
+- `300000.`
+- `3e5`
+- `3e+5`
+- `3E5`
+- `3.0e+`
+- `.3e6`
+- `0.3E6`
+- `30E4`
+- `30.E+4`
+- `300e3`
 
-* `3e5`
-* `3e+5`
-* `3E5`
-* `3.0e+`
-* `.3e6`
-* `0.3E6`
-* `30E4`
-* `30.E+4`
-* `300e3`
-
-___
+------
 
 
 
 **some character constants are shown below.**
 
-* `'A'`
-* `'x'`
-* `'3'`
-* `'?'`
-* `' '`
+- `'A'`
+- `'x'`
+- `'3'`
+- `'?'`
+- `' '`
 
-___
+------
 
 
 
@@ -662,22 +661,22 @@ ___
 
 **You can look up the ASCII table [here](http://www.asciitable.com/)**
 
-___
+------
 
 
 
 **shown below are some character constants, expressed in terms of escape sequences.**
 
-* `'\n'`
-* `'\t'`
-* `'\b'`
-* `'\''`
-* `'\\'`
-* `'\"'`
+- `'\n'`
+- `'\t'`
+- `'\b'`
+- `'\''`
+- `'\\'`
+- `'\"'`
 
 **you can look up the escape sequences in C [here](https://en.wikipedia.org/wiki/Escape_sequences_in_C)**
 
-___
+------
 
 
 
@@ -687,21 +686,21 @@ In some versions of C, the letter `A` can also be expressed as a hexadecimal esc
 
 It should be understood that the preferred way to represent this character is simply `'A'`. In this form, the character constant is not dependent upon its equivalent ASCII representation.
 
-___
+------
 
 
 
 **some string constants are shown below**
 
-* `"green"`
-* `"Washington, D.C. 200005"`
-* `"123-456-789"`
-* `"$12.20"`
-* `"THE CORRECT ANSWER IS:"`
-* `"2*(I+3)/J"`
-* `"        "`
-* `"Line 1\nLine 2\nLine 3"`
-* `""`
+- `"green"`
+- `"Washington, D.C. 200005"`
+- `"123-456-789"`
+- `"$12.20"`
+- `"THE CORRECT ANSWER IS:"`
+- `"2*(I+3)/J"`
+- `"        "`
+- `"Line 1\nLine 2\nLine 3"`
+- `""`
 
 Note that the string constant "Line 1\nLine 2\nLine 3" extends over three lines, because of the newline characters that are embedded within the string. Thus, this string would be displayed as
 
@@ -713,7 +712,7 @@ Line 3
 
 Also, note that the string "" is a *null* (empty) string.
 
-___
+------
 
 
 
@@ -723,44 +722,44 @@ ___
 
 The special characters are `\t` (horizontal tab), `\"` (double quotation marks, which appears twice), and `\n` (newline).
 
-___
+------
 
 
 
 The string constant "Line 1\nLine 2\nLine 3" actually contains  38 characters. This includes five blank spaces, four special characters (horizontal tab, two quotation marks and newline) represented by escape sequences, and the null character (\0) at the end of the string.
 
-___
+------
 
 
 
 The character constant `'w'` has an integer value of `119` in the ASCII character set. It doe not have a null character at the end. In contrast, the string constant `"w"` actually consists of two characters - the lowercase letter `w` and the null character \0. This constant does not have a corresponding integer value.
 
-___
+------
 
 
 
 Suppose that the string "California" is to be stored in a one-dimensional character array called `letter`. Since "California" contains 10 characters, `letter` will be an 11-element array. Thus, `letter[0]` will represent the letter `C`, `letter[1]` will represent `a`, and so on. Note that the last (i.e the 11th) array element, `letter[10]`, represents the null character which signifies the end of the string.
 
-___
+------
 
 
 
 **A C program contains the following declarations**
 
-* `int a, b, c;`
-* `float root1, root2;`
-* `char flag, text[80];`
-* `short int a, b, c;`
-* `long int r, s, t;`
-* `unsigned x, y;`
-* `double root1, root2;`
-* `long float root1, root2;`
-* `int c = 12;`
-* `char star = '*';`
-* `float sum = 0;`
-* `double factor = 0.21023e-6;`
-* `char text[] = "Washington";`
-* `char text[11] = "Washington";`
+- `int a, b, c;`
+- `float root1, root2;`
+- `char flag, text[80];`
+- `short int a, b, c;`
+- `long int r, s, t;`
+- `unsigned x, y;`
+- `double root1, root2;`
+- `long float root1, root2;`
+- `int c = 12;`
+- `char star = '*';`
+- `float sum = 0;`
+- `double factor = 0.21023e-6;`
+- `char text[] = "Washington";`
+- `char text[11] = "Washington";`
 
 Thus, `a`, `b` and `c` are declared to be integer variables, `root1` and `root2` are floating-point variables, `flag` is a char-type variable and `text` is an 80-element, char-type array. Note the square brackets enclosing the size specification for `text`.
 
@@ -776,33 +775,33 @@ char flag;
 char text[80];
 ```
 
-___
+------
 
 
 
 **some simple expressions are shown below**
 
-* `a + b`
-* `x = y`
-* `c = a + b`
-* `x <= y`
-* `x == y`
-* `++i`
-* `i = i + 1`
+- `a + b`
+- `x = y`
+- `c = a + b`
+- `x <= y`
+- `x == y`
+- `++i`
+- `i = i + 1`
 
-___
+------
 
 
 
 **some expression statements are shown below**
 
-* `a = 3;`
-* `c = a + b;`
-* `++i;`
-* `printf("Area = %f", area);`
-* `;`
+- `a = 3;`
+- `c = a + b;`
+- `++i;`
+- `printf("Area = %f", area);`
+- `;`
 
-____
+------
 
 
 
@@ -816,11 +815,11 @@ ____
 }
 ```
 
-___
+------
 
 
 
-**The following control statement creates a conditional loop in which several actions are executed repeatedly, until particular condition is satisfied**
+**The following control statement creates a conditional loop in which several actions are executed repeatedly until the particular condition is satisfied**
 
 ```C
 while ( count <= n )
@@ -832,25 +831,26 @@ while ( count <= n )
 }
 ```
 
-___
+------
 
 
 
 A C program contains the following symbolic constant definitions
 
-* `#define TAXRATE 0.23`
-* `#define PI 3.141593`
-* `#define TRUE 1`
-* `#define FASE 0`
-* `#define FRIEND "Susan"`
+- `#define TAXRATE 0.23`
+- `#define PI 3.141593`
+- `#define TRUE 1`
+- `#define FASE 0`
+- `#define FRIEND "Susan"`
 
-___
+------
 
 
 
 ## Problems
 
 1. Determine which of the following are valid identifiers. If valid, explain why
+
    1. `record1`
    2. `$tax`
    3. `name_and_address`
@@ -863,6 +863,7 @@ ___
    10. `return`
 
 2. Assume that your version of C can recognize only the first 8 characters of an identifier name, though identifier names may be arbitrarily long. Which of the following pairs of identifier names are considered to be identical and which are distinct?
+
    1. `name, names`
    2. `list1, list2`
    3. `address, Address`
@@ -871,6 +872,7 @@ ___
    6. `char1, char_1`
 
 3. Determine which of the following numerical values are valid constants. If a constant is valid, specify whether it is an integer or real. Also, specify the base for each valid integer constant.
+
    1. `0.5`
    2. `12345678`
    3. `0515`
@@ -961,7 +963,7 @@ ___
 
    3. ```C
       if (x > 0)
-      	y = 2.0;
+          y = 2.0;
       else
           y = 3.0;
       ```
@@ -1009,9 +1011,115 @@ ___
 
 
 
-___
+------
 
 
 
 ## Operators and Expressions
+
+
+
+1. Suppose that `a` and `b` are integer variables whose values are `10` and `3` respectively. Several arithmetic expressions involving these variables are shown below, together with their resulting values.
+
+   | **Expression** | **Value** |
+   | :------------: | :-------: |
+   |    `a + b`     |   `13`    |
+   |    `a - b`     |    `7`    |
+   |    `a * b`     |   `30`    |
+   |    `a / b`     |    `3`    |
+   |    `a % b`     |     1     |
+
+   Notice that the truncated quotient resulting from the division operation, since both operands represent integer quantities. Also, notice the integer remainder resulting from the use of the modulus operator in the last expression.
+
+   Now suppose that `v1` and `v2` are floating-point variables whose values are `12.5` and `2.0` respectively. Several arithmetic expressions involving these variables are shown below, together with their resulting values.
+
+   | **Expression** | **Value** |
+   | :------------: | :-------: |
+   |   `v1 + v2`    |  `14.5`   |
+   |   `v1 - v2`    |  `10.5`   |
+   |   `v1 * v2`    |  `25.0`   |
+   |   `v1 / v2`    |  `6.25`   |
+
+   Finally, suppose that the `c1` and `c2` character-type variables that represent the characters `P` and `T`, respectively. Several arithmetic expressions that make use of these variables are shown below, together with their resulting values (based upon the ASCII character set).
+
+   | **Expression**  | **Value** |
+   | :-------------: | :-------: |
+   |      `c1`       |   `80`    |
+   |    `c1 + c2`    |   `164`   |
+   |  `c1 + c2 + 5`  |    169    |
+   | `c1 + c2 + '5'` |    217    |
+
+   Note that `P` is encoded as (decimal) `80`, `T` is encoded as `84`, and `5` is encoded as `53` in the **[ASCII](http://www.asciitable.com/)** character set.
+
+   If one or both operands represent negative values, then the addition, subtraction, multiplication and division operations will result in values whose signs are determined by the usual roles of algebra. Integer divisions will result in truncation toward zero, i.e, the resultant will always be smaller in magnitude than the true quotient.
+
+   The interpretation of the remainder operation is unclear when one of the operands is negative. Most versions of C assign the sign of the first operand to the remainder. Thus, the condition
+
+   `a = ((a / b) * b) + (a % b)`
+
+   will always be satisfied, regardless of the signs of the values represented by `a` and `b`.
+
+2. Suppose that `a` and `b` are integer variables whose values are `11` and `-3` respectively. Several arithmetic expressions involving these variables are shown below, together with their resulting values.
+
+   | **Expression** | **Value** |
+   | :------------: | :-------: |
+   |    `a + b`     |    `8`    |
+   |    `a - b`     |   `14`    |
+   |    `a * b`     |   `-33`   |
+   |    `a / b`     |   `-3`    |
+   |    `a % b`     |    `2`    |
+
+   If `a` had been assigned a value of `-11` and `b` had been assigned `3`, then the value of `a / b` would still be `-3` but the value of `a % b` would be `-2`. Similarly, if `a` and `b` had both been assigned negative values `(-11 and -3, respectively)`, then the value of `a / b` would be `3` and the value of `a % b` would be `-2`.
+
+   `a = ((a / b) * b) + (a % b)`
+
+   will be satisfied in each of the above cases. Most versions of C will determine the sign of the remainder in this manner, though this feature is unspecified in the formal definition of the language.
+
+3. Here is an illustration of the results that are obtained with floating-point operands having different signs. Let `r1` and `r2` be floating-point variables whose assigned values are `-0.66` and `4.50`. Arithmetic expression involving these variables are shown below, together with their resulting values.
+
+   | **Expression** |  **Value**  |
+   | :------------: | :---------: |
+   |   `r1 + r2`    |   `3.04`    |
+   |   `r1 - r2`    |   `-5.16`   |
+   |   `r1 * r2`    |   `-2.97`   |
+   |   `r1 / r2`    | `-0.146667` |
+
+   Operands that differ in type may undergo type conversion before the expression takes on its final value. In general, the final result will be expressed in the highest precision possible, consistent with the data types of the operands. The following rules apply when neither operand is `unsigned`.
+
+   - If both operands are floating-point types whose precisions differ(e.g a `float` and a `double`), the lower-precision operand will be converted to the precision of the other operand, and the result will be expressed in this higher precision. Thus, an operation between a `float` and a `double` will result in a `double`, a `float` and `long double` will result in a `long double`. *(Note: In some versions of C, all operands of type `float` are automatically converted to `double`)*.
+   - If one operand is a floating-point type (e.g., `float`, `double` or `long double`) and the other is a `char` or an `int` (including `short int` or `long int`), the `char` or `int` will be converted to the floating-point type and the result will be expressed as such. Hence, an operation between an `int` and `double` will result in a `double`.
+   - If neither operand is a floating-point type but one is a `long int`, the other will be converted to `long int` and the result will be `long int`. Thus, an operation between a `short int` and an `int` will result in an `int`.
+   - If neither operand is a floating-point type or `long int`, then both operands will be converted to `int` (if necessary) and the result will be an `int`. Thus, an operation between a `short int` and an `int` will result in an `int`.
+
+   ------
+
+4. Suppose that `i` is an integer variable whose value is `7`, `f` is a floating-point variable whose value is `5.5`, and `c` is a character-type variable that represents the character `'w'`. Several expressions which include the use of these variables are shown below. Each expression involves operands of two different types. Assume that the ASCII character set is being used.
+
+   |       Expression        |  Value  |       Type       |
+   | :---------------------: | :-----: | :--------------: |
+   |         `i + f`         | `12.5`  | double-precision |
+   |         `i + c`         |  `126`  |     integer      |
+   |      `i + c - '0'`      |  `78`   |     integer      |
+   | `(i + c) - (2 * f / 5)` | `123.8` | double-precision |
+
+   **Note that** : `'w'` is encode as (decimal) 119 and `0` is encoded as 48 in the **ASCII** character set.
+
+   The value of an expression can be converted to a different data type if desired. To do so, the expression must be preceded by the name of the desired data type, enclosed in parenthesis, i.e,
+
+   `(data type) expression`
+
+   This type of construction is known as a *cast*.
+
+5. Suppose that `i` is an integer variable whose value is `7`, and `f` is a floating-point variable whose value is `8.5`, the expression
+
+   `(i + f) % 4`
+
+   is invalid, because the first operand `(i + f)` is floating-point rather than an integer. However, the expression
+
+   `((int) (i + f)) % 4`
+
+   forces the first operand to be an integer and is therefore valid, resulting in the integer remainder `3`.
+
+   **Note that**: the explicit type specification applies only to the first operand, not the entire expression.
+
 
