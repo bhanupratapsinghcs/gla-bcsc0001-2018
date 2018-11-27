@@ -1122,4 +1122,377 @@ A C program contains the following symbolic constant definitions
 
    **Note that**: the explicit type specification applies only to the first operand, not the entire expression.
 
+   The data type associated with the expression itself is not changed by a vast. Rather, i tis the *value* of the expression that undergoes type conversion wherever the cast appears. This is particularly relevant when the expression consists only of a single variable.
 
+6. The arithmetic expression 
+
+   `a - b / c * d`
+
+   is equivalent to the algebraic formula `a - [(b / c) x d]`. Thus, if the floating point variables `a, b, c and d` have been assigned the values `1.`, `2.`, `3.` and `4.` respectively, the expression would represent the value `-1.666666...` since 
+
+   `1.-[(2. / 3.) x 4.] = 1. - [0.666666... x 4.] = 1. - 2.666666... = -1.666666...`
+
+   Notice that the division is carried out first, since this operation has a higher precedence than subtraction. The resulting quotient is then multiplied by `4.`, because of left-to-right associativity. The product is then subtracted from `1.`, resulting in the final value of `-1.666666...`.
+
+   The natural precedence can be altered through the use of parentheses, thus allowing arithmetic operations within an expression to be carried out in any desired order. In fact, parentheses can be *nested*, one pair within another. In such cases the innermost operations are carried out first, then the innermost operations, and so on.
+
+7. The arithmetic expression
+
+   `(a - b) / (c * d)`
+
+   is equivalent to the algebraic formula `(a - b) / (c x d)`. Thus, if the floating-point variables `a, b, c and d` have been assigned the values `1., 2., 3., 4.`, respectively, the expression would represent the value `--0.0833333...`, since 
+
+   `(1. - 2.) / (3. x 4.) = -1. / 12. = -0.0833333...`
+
+   Sometimes, it is a good idea to use the parentheses to clarify an expression, even though the parentheses may not be required. On the other hand, the use of overly complex expressions, such as that shown in the next example, should be avoided if at all possible. Such expressions are difficult to read, and they are often written incorrectly because of unbalanced parntheses.
+
+8. Consider the arithmetic expression
+
+   `2 * ((i % 5) * (4 + (j - 3) / (k + 2)))`
+
+   where `i`, `j` and `k` are integer variables. If these variables are assigned the values `8`, `15` and `4` respectively, then the given expression would be evaluated as
+
+   `2 x ((8 % 5) x (4 + (15 - 3) / (4 + 2))) = 2 x (3 x (4 + (12 / 6))) = 2 x ( 3 x ( 4 + 2)) = 2 x (3 x 6) = 2 x 18 = 36`
+
+   Suppose the value of this expression will be assigned to the integer variable `w` i.e.,
+
+   `w = 2 * ((i % 5) * (4 + (j - 3) / (k + 2)))`
+
+   It is generally better to break this long arithmetic expression up into several shorter expression, such as
+
+   `u = i % 5;`
+
+   `v = 4 + (j - 3) / (k + 2);`
+
+   `w = 2 * ( u * v);`
+
+   Where `u` and `v` are integer variables. These equivalent expressions are much more likely to be written correctly than the original lengthy expression.
+
+9. **Here are some examples which illustrate the use of the unary minus operation**
+
+   * `-743`
+   * `-0XFFF`
+   * `-0.2`
+   * `-5E-8`
+   * `-root1`
+   * `-(x + y)`
+   * `-3 * ( x + y )`
+
+   In each case the minus sign is followed by a numerical operand which may be an integer constant, a floatin-point constant, a numeric variable or an arithmetic expression.
+
+   THere are two other commonly user unary operators. The *increment operator*, `++`, and the *decrement operator*, `--`. The increment operator causes its operand to be increased by `1`, whereas the decrement opertor causes its operand to be decreased by `1`. The operand used with each of those operators must be a single variable.
+
+10. Suppose that `i` is an intger variable that has been assigned a value of `5`. The expression `++i`, which is equivalent to writing `i = i + 1`, causes the value of `i` to be increased to `6`. Similarly, the expression `--i`, which is equivalent to to `i = i - 1`, causes the (original) value of `i` to be decreased to `4`.
+
+11. A C program includes an integer variable `i` whose initial value is `1`. Suppose the program includes the following three `printf` statements,
+
+    1. `printf("i = %d\n", i);`
+    2. `printf("i = %d\n", ++i);`
+    3. `printf("i = %d\n", i);`
+
+    These `printf` statements will generate the following three lines of output. 
+
+    ```
+    i = 1
+    i = 2
+    i = 2
+    ```
+
+    The first statement causes the original vlaue of `i` to be displayed. The second statement increments `i` and then displays its value. The final value of `i` is displayed by the last statement.
+
+    Now suppose that the program includes the follwoing three `printf` statements, rather than the three statements given above.
+
+    1. `printf("i = %d\n". i);`
+    2. `printf("i = %d\n", i++);`
+    3. `printf(i = %d\n", i);`
+
+    The first and third statements are identical to those shown above. In the second statement, the unary operator follows the integer variable rather than preceeds it.
+
+    These statements will generate the following three lines of output.
+
+    ```
+    i = 1
+    i = 1
+    i = 2
+    ```
+
+    The first statement cause the original value of `i` to be displayed. The second statement causes the current value of `i`(`1`) to be displayed and then incremented (to `2`). The final value of i(`2`) is displayed by the last statement.
+
+    Simply note the distinction between the expression `++i` in the first group of statements, and the expression `i++` in the second group.
+
+    Another unary operator that is worth mentioning at this time is the `sizof` operator. This operator returns the size of its operand, in bytes. The `sizeof` always preced its operand. THe operand may be an expression, or it may be a cast.
+
+    Elementary progrms rarely make use of the `sizeof` operator. However, this operator allows a determination of the number of bytes allocated to various types of data items. This information can be very useful when transferring a program to a different computer or to a new version of C. It is also used for dynamic memory allocation.
+
+12. Suppose that `i` is an integer variable, `x` is  a floating-point variable, `d` is a double-precision variable, and `c` is a character type variable. The statements
+
+    1. `printf("integer : %d\n", sizeof i);`
+    2. `printf("float : %d\n", sizeof x);`
+    3. `printf("double : %d\n", sizeof d);`
+    4. `printf("character : %d\n", sizeof c);`
+
+    might generate the following output (*it works on my computer* :laughing: )
+
+    ```
+    integer : 4
+    float : 4
+    double : 8
+    character : 1
+    ```
+
+    Thus, we see that this version of C allocates 4 bytes to each integer quantity, 4 bytes to each floating-point quantity, 8 byte to each double precision quantity and 1 byte to each character. These values may vary from one version of C to another.
+
+    Another way to generate the same information is to use a cast rather than a variable within each `printf` statement, Thus, the `printf` statements could have been written as
+
+    1. `printf("integer : %d\n", sizeof (integer));`
+    2. `printf("float : %d\n", sizeof (float));`
+    3. `printf("double : %d\n", sizeof (double));`
+    4. `printf("character : %d\n", sizeof (char));`
+
+    These `printf` statements will generate the same output as that shown above. Note that each cast is enclosed in parentheses.
+
+    Finally, consider the array declaration
+
+    `char text[] = "Shaktimaan";`
+
+    The statement
+
+    `printf("Number of characters = %d", sizeof text);`
+
+    will generate the following output
+
+    ```
+    Number of characters = 11
+    ```
+
+    Thus we see that the array `text` contains 11 characters.
+
+    A *cast* is also considered to be a unary operator. In general terms, a reference to the cast operator is written as `(type)`. Unary operators have a higher precedence than arithmetic operators. Hence, if a unary minus operator acts upon an arithmetic expression that contains one or more arithmetic operators, the unary minus operation will be carried out first (unless, of course the arithmetic expression is enclosed in parentheses). Also, the associativity of the unary operators is right to left, though consecutive unary operators rarely appear in elementary programs.
+
+13. Suppose that `x` and `y` are integer variables whose values are `10` and `20` respectively. The values of the expression `-x + y` will be `-10 + 20 = 10`. Note that the unary minus operation is carried out before the addition. Now suppose that parentheses are introduced, so that the expression becomes  
+
+    `-(10 + 20)`. The value of this expression is `-(10 + 20) = -30`. Note that the addition now *precedes the unary minus operation*.
+
+14. Suppose that `i`, `j`, and `k` are integer variables whose values are `1`, `2` and `3`, respectively. Several logical expressions involving these variables are shown below
+
+    |     Expression      | Interpretation | Value |
+    | :-----------------: | :------------: | :---: |
+    |       `i < j`       |     `true`     |  `1`  |
+    |   `(i + j) >= k`    |     `true`     |  `1`  |
+    | `(j + k) > (i + 5)` |    `false`     |  `0`  |
+    |      `k != 3`       |    `false`     |  `0`  |
+    |      `j == 2`       |     `true`     |  `1`  |
+
+    When carrying out relational and equality operations, operands that differ in type will be converted in accordance with the rules.
+
+15. Suppose that `i` is an integer variable whose value is `7`, `f` is a floating-point variable whose value is `5.5f` and `c` is a character variable that represents the character `'w'`. Some logical expressions that make use of these variables are shown below. Each expression involves two different type operands
+
+    |      Expression      | Interpretation | Value |
+    | :------------------: | :------------: | :---: |
+    |       `f > 5`        |     `true`     |  `1`  |
+    |   `(i + f) <= 10`    |    `false`     |  `0`  |
+    |      `c == 119`      |     `true`     |  `1`  |
+    |      `c != 'p'`      |     `true`     |  `1`  |
+    | `c >= 10  * (i + f)` |    `false`     |  `0`  |
+
+    In addition to the relational and equality operators, C contains two *logical operators*
+
+    | Operator | Meaning |
+    | :------: | :-----: |
+    |   `&&`   |  `and`  |
+    |   `||`   |  `or`   |
+
+    These operators are referred to as *logical and* and *logical or*, respectively.
+
+    The logical operators act upon operands that are themselves logical expressions. The net effect is to combine the individual logical expression into more complex conditions that are either true or false. The result of a *logical and* operation will be true only if both operands are true, whereas the result of a *logical or* operation will be true if either operand is true or if both operands are true. In other words, the result or a *logical or* operation will be false only if both operands are false.
+
+    In this context it should be pointed out that *any* nonzero value, not just `1`, is interpreted as true.
+
+## Problems
+
+1. Suppose `a`, `b` and `c` are integer variables that have been assigned the values `a = 8`, `b = 3` and `c = -5`. Determine the value of each of the following arithmetic expressions.
+
+   1. `a + b + c`
+   2. `2 + b + 3 * (a - c)`
+   3. `a / b`
+   4. `a & b`
+   5. `a / c`
+   6. `a % c`
+   7. `a * b + c`
+   8. `a * (b / c)`
+   9. `(a * c) % b`
+   10. `a * ( c % b)`
+
+2. Suppose `x`, `y` and `z` are floating-point variables that have been assigned the values `x = 8.8`, `y = 2.5` and `z = -5.2`. Determine the value of each of the following arithmetic expressions
+
+   1. `x + y + z`
+   2. `2 * y + 3 * ( x - z)`
+   3. `x / y`
+   4. `x % y`
+   5. `x / (y + z)`
+   6. `(x / y) + z`
+   7. `2 * x / 3 * y`
+   8. `2 * x / (3 * y)`
+
+3. Suppose `c1`, `c2` and `c3` are character-type variables that have been assigned the characters `E`, `5` and `?` respectively. Determine the numerical value of the following expressions, based upon the ASCII character set.
+
+   1. `c1`
+   2. `c1 - c2 + c3`
+   3. `c2 - 2`
+   4. `c2 - '2'`
+   5. ``c3 + '#'`
+   6. `c1 % c3`
+   7. `'2' + '2'`
+   8. `(c1/ c2) * c3`
+   9. `3 * c2`
+   10. `'3' * c2`
+
+4. A C program contains the following declarations:
+
+   1. `int i, j;`
+   2. `long ix;`
+   3. `short s;`
+   4. `float x;`
+   5. `double dx;`
+   6. `char c;`
+
+   Determine the data type of each of the following expressions
+
+   1. `i + c`
+   2. `x + c`
+   3. `dx + x`
+   4. `((int) dx) + ix`
+   5. `i + x`
+   6. `s + j`
+   7. `ix + j`
+   8. `s + c`
+   9. `ix + c`
+
+5. A C program contains the following declarations and initial assignments:
+
+   1. `int i = 8, j = 5;`
+   2. `float x = 0.005, y = -0.01;`
+   3. `char c = 'c', d = 'd';`
+
+   Determine the value of each of the following expressions. Use the values initially assigned to the variables for each expression.
+
+   1. `(3 * i - 2 * j) % (2 * d - c)`
+   2. `2 * ((i / 5) + ( 4 * (j - 3)) % (i + j - 2))`
+   3. `(i - 3 * j) % (c + 2 *d) / (x - y)`
+   4. `-(i + j)`
+   5. `++i`
+   6. `i++`
+   7. `--j`
+   8. `++x`
+   9. `y--`
+   10. `i <=j`
+   11. `c > d`
+   12. `x >= 0`
+   13. ` x < y`
+   14. ` j != 6`
+   15. `c == 99`
+   16. `5 * (i + j) > 'c'`
+   17. `(2 * x + y) == 0` 
+   18. `2 * x + (y == 0)`
+   19. `2 * x + y == 0`
+   20. `!(i <= j)`
+   21. `!(c == 99)`
+   22. `!(x > 0)`
+   23. `(i > 0) && (j < 5)`
+   24. `(i > 0) || (j < 5)`
+   25. `(x > y) && ( i > 0) || (j < 5)`
+   26. `(x > y) && (i > 0) && (j < 5)`
+
+6. A C program contains the following declarations and initial assignments:
+
+   1. `int i = 8, j = 5, k;`
+   2. `float x = 0.005, y = -0.01, z;`
+   3. `char a, b, c = 'c', d = 'd';`
+
+   Determine the value of each of the following assignment expressions. Use the values originally assigned to the variables for each expression.
+
+   1. `k = (i + j)`
+   2. `z = (x + y)`
+   3. `i = j`
+   4. `k = (x + y)`
+   5. `k = c`
+   6. `z = i / j;`
+   7. `a = b =d`
+   8. `i = j = 1.1`
+   9. `z = k = x`
+   10. `k = z = x`
+   11. `i += 2`
+   12. `y -= x`
+   13. `x *= 2`
+   14. `i /= j`
+   15. `i %= j`
+   16. `i += (j - 2)`
+   17. `k = (j == 5) ? i : j`
+   18. `k = (j > 5) ? i : j`
+   19. `z = ( x >= 0) x : 0`
+   20. `z = (y >= 0) ? y : 0`
+   21. `a = (c < d) ? c : d`
+   22. `i -= (j > 0) ? j : 0`
+
+7. Each of the following expressions involves the use of a library function. Try them out!
+
+   Google the prototype of the function and check what is the return type of the function and also what is the parameter list. (data type of each parameter and number of total parameters)
+
+   1. `abs(i - 2 * j)`
+   2. `fabs(x + y)`
+   3. `isprint(c)`
+   4. `isdigit(c)`
+   5. `toupper(c)`
+   6. `ceil(x)`
+   7. `floor(x + y)`
+   8. `islower(c)`
+   9. `isupper(j)`
+   10. `exp(x)`
+   11. `log(x)`
+   12. `sqrt(x*x + y*y)`
+   13. `isalnum(10 * j)`
+   14. `isalpha(10 * j)`
+   15. `isascii(10 * j)`
+   16. `fmod(x, y)`
+   17. `tolower(65)`
+   18. `pow(x - y, 3.0)`
+   19. `sin(x - y)`
+   20. `strlen("hello\0")`
+   21. `strpos("hello\0", 'e')`
+
+   [Here's](https://doc.bccnsoft.com/docs/cppreference_en/all_c_functions.html) a handy guide to all the function in C.
+
+8. A C program contains the following declarations and initial assignments :
+
+   1. `int i = 8, j = 5;`
+   2. `double x = 0.005, y = -0.01;`
+   3. `char c - 'c', d = 'd';`
+
+   Determine the value of each of the following expressions, which involve the use of library functions.
+
+   1. `abs(i - 2 * j)`
+   2. `fabs(x + y)`
+   3. `isprint(c)`
+   4. `isdigit(c)`
+   5. `toupper(d)`
+   6. `ceil(x)`
+   7. `ceil(x + y)`
+   8. `floor(x)`
+   9. `floor(x + y)`
+   10. `islower(c)`
+   11. `isupper(j)`
+   12. `exp(x)`
+   13. `log(x)`
+   14. `log(exp(x))`
+   15. `sqrt(x*x + y*y)`
+   16. `isalnum(10 * j)`
+   17. `isaplha(10 * j)`
+   18. `isascii(10 * j)`
+   19. `toascii(10 * j)`
+   20. `fmod(x, y)`
+   21. `tolower(65)`
+   22. `pow(x - y, 3.0)`
+   23. `sin(x - y)`
+   24. `strlen("hello\0")`
+   25. `strpos("hello\0", 'e')`
+   26. `sqrt(sin(x) + cos(y))`
