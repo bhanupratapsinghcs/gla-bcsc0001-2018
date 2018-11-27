@@ -4,7 +4,7 @@
 
 ## Latest Announcement : 
 ## Link for JetBrains License for students : [here](https://www.jetbrains.com/shop/eform/students)  
-## Super Practice Set 2 is being uploaded, check it out [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/practice/questions/Super%20Practice%20Set%202.md)  
+## Problems for Operators & Expressions added in Super Practice Set 2 (at the end of the file), check it out [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/practice/questions/Super%20Practice%20Set%202.md)  
 ![](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/2ne22i.jpg)  
 ## Worksheet 20 : [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/worksheets/Worksheet%2020.md)  
 ## Worksheet 19 : [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/worksheets/Worksheet%2019.md)  
