@@ -1,6 +1,6 @@
 # BCSC0001 GLA University, Mathura
 
-## To share a file without making a repo, use [this](https://gist.github.com/) link.
+## To share a file without making a repo, use [this](https://gist.github.com/) link to write the source code and then share the URL with me.
 
 
 ## Latest Announcement : 
