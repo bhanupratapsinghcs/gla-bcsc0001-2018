@@ -3,7 +3,7 @@
 
 
 ## Latest Announcement : 
-## Bitwise Opertors in C : [here](https://dev.to/noah11012/bitwise-operations-in-cc-3j3k)  
+## Bitwise Operators in C : [here](https://dev.to/noah11012/bitwise-operations-in-cc-3j3k)  
 ## Link for JetBrains License for students : [here](https://www.jetbrains.com/shop/eform/students)  
 ## Problems for Operators & Expressions added in Super Practice Set 2 (at the end of the file), check it out [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/practice/questions/Super%20Practice%20Set%202.md)  
 ![](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/2ne22i.jpg)  
