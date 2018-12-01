@@ -1,6 +1,7 @@
 # BCSC0001 GLA University, Mathura
 
 ## To share a file without making a repo, use [this](https://gist.github.com/) link to write the source code and then share the URL with me.
+## [V. V. Important C Programs](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/DOC-20180910-WA0003.pdf)  
 ## [Let Us C - Y. P. Kanetkar PDF](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/Let%20Us%20C%20-%20Yashwant%20Kanetkar.pdf)  
 
 ## Latest Announcement : 
