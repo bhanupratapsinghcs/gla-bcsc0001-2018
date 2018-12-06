@@ -5,6 +5,7 @@
 ## [Let Us C - Y. P. Kanetkar PDF](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/Let%20Us%20C%20-%20Yashwant%20Kanetkar.pdf)  
 
 ## Latest Announcement : 
+## Largest Prime Factor Program from ProjectEuler : [here](https://gist.github.com/dbc2201/15a8a3df3a076f2936187378b595aae8)  
 ## Bitwise Operators in C : [here](https://dev.to/noah11012/bitwise-operations-in-cc-3j3k)  
 ## Link for JetBrains License for students : [here](https://www.jetbrains.com/shop/eform/students)  
 ## Problems for Operators & Expressions added in Super Practice Set 2 (at the end of the file), check it out [here](https://github.com/dbc2201/gla-bcsc0001-2018/blob/master/practice/questions/Super%20Practice%20Set%202.md)  
